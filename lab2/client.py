@@ -10,6 +10,7 @@ sock.sendall(request)
 
 all_result = b""
 result = sock.recv(10000)
+all_result += result
 while (len(result) > 0):
     #print(result)
     result = sock.recv(10000)
